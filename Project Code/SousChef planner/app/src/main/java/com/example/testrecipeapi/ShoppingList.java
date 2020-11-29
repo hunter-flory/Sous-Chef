@@ -19,10 +19,13 @@ public class ShoppingList extends AppCompatActivity {
         // Create local shoppingList array and pass ingredientList
         ArrayList<String> shoppingList = DishSearch.ingredientList;
         ListView shopView = findViewById(R.id.shopView);
+
         if(shoppingList.isEmpty()){
             shoppingList.add("Shopping List is Empty!");
         }
         
+
+
 
         // Set shopView to display shoppingList items in selectable Listview
         // making this shopView(List View) selectable because I want user to be able
