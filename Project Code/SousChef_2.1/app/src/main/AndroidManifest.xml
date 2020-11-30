@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testrecipeapi">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".Planner"></activity>
+
+        <activity
+            android:name=".WelcomeScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DishSearch"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="ExtraText">
+        </activity>
+
+        <activity
+            android:name=".Pantry"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <activity
+            android:name=".ShoppingList"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <Button
+            android:id="@+id/plannerBtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:text="Planner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shopListBtn"
+            app:layout_constraintVertical_bias="0.066" />
+
+
+    </application>
+
+</manifest>
