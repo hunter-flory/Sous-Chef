@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WelcomeScreen extends AppCompatActivity {
-    Button pantryBtn, dishSrchBtn, shopListBtn;
+    Button pantryBtn, dishSrchBtn, shopListBtn,plannerBtn;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class WelcomeScreen extends AppCompatActivity {
         pantryBtn = findViewById(R.id.pantryBtn);
         dishSrchBtn = findViewById(R.id.dishSrchBtn);
         shopListBtn = findViewById(R.id.shopListBtn);
+        plannerBtn=findViewById(R.id.plannerBtn);
 
         dishSrchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,5 +44,13 @@ public class WelcomeScreen extends AppCompatActivity {
             }
         });
 
+        plannerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(WelcomeScreen.this, Planner.class);
+                startActivity(intent);
+            }
+
+        });
     }
 }
