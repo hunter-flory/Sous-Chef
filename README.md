@@ -1,3 +1,11 @@
+Sous-Chef is an application that allows users to maintain a shopping list filled with ingredients for dishes of their choice.
+AUTHORS: Roger Chapa, Meghana Guntaka, Suman Poudel, Maria Maldonado, Javier Gamez, Hunter Flory
+
+This application was developed in Android Studios utilizing agile software methodology. 
+
+
+
+
 # CSE3310 Project 
 
 Welcome to our SE project for the 2020 Fall semester! 
