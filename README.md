@@ -4,20 +4,18 @@ AUTHORS: Roger Chapa, Meghana Guntaka, Suman Poudel, Maria Maldonado, Javier Gam
 
 This application was developed in Android Studios utilizing agile software methodology. 
 
+/* CLASS FILES */
 
+// Dish Search // 
+This class utilizes RapidAPI to return search results from a user-inputted query. 
+The user inputs the name of the dish they would like to make and a list of relevant dishes (titles of json objects) are returned to the user. 
+The user can tap on a dish that they like and from there can view the recipe instructions via link to the recipe's website or can directly add the dish to their shopping cart. The API is used to get a list of all the ingredients required to make by parsing the json object into an array list. The parsed ingredients are then added to the user's shopping list once they have selected all the dishes they want to make and tapped 'Save List'.
 
+// Pantry //
+This class takes data from the saved shopping list and allows the user to view ingredients they have stored in their 'pantry'. This means that the user has completed 'shopping' and now have a pantry full of the ingredients for dishes they'd like to make. From here the user may edit the contents of the pantry or use the pantry class's 'Reverse Search' feature to find a list of dishes that use the ingredients in their pantry. For example, if the user decides that another dish sounds better than the one originally intended, a new dish may be found based on the ingredients the user has left. This class utilizes keys in Android Studio to save the contents of the pantry locally so data is not lost on exit.
 
-# CSE3310 Project 
+// Shopping List //
+This class saves data from Dish Search locally and passes data to Pantry. This is where the user stores their chosen dishes and ingredients. When the application is reopened, if Shopping List has any data stored in it, both Pantry and Dish Search load data from Shopping List.
 
-Welcome to our SE project for the 2020 Fall semester! 
-Each folder has a designated area where we put certain files to keep the repository organized: 
-
-1. Project Code: All code files (i.e. -> .java and .cpp files) will be placed here. 
-2. Header Files: All header files (.h) will be kept here for organization purposes.
-3. Documents: Any documentation for certain code/functions will stay here. 
-4. Presentation: This is where we will keep our work for written/oral presentations for class.
-5. Diagrams: This is where our diagrams will be used for planning our project and used for reference.
-6. SCRUM: We will be using SCRUM Spreadsheets to keep up with our goals/objectives for each phase of development. 
-7. Requirements: All requirements for the project will be kept here as use for reference during development. 
-
-CHANGES MAY BE MADE IN THE FUTURE SUCH AS ADDING NEW BRANCHES OR FEATURES. ALL THINGS ARE SUBJECT TO CHANGE DUE TO MAINTAINING FLEXIBILITY DURING THE DEVELOPMENT PROCESS. 
+// Welcome Screen //
+This class allows the user to navigate the application by providing buttons to move to the Pantry, Shopping List, and Dish Search screens where the user can view and edit data.
